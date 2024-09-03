@@ -1,0 +1,145 @@
+/* figtree-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Figtree";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/figtree-v5-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* figtree-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Figtree";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/figtree-v5-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* figtree-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Figtree";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/figtree-v5-latin-800.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  height: 100%;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+image {
+  object-fit: cover;
+  display: flex;
+}
+
+body {
+  font-family: "Figtree";
+  background-color: #f4d04e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.card {
+  border: 1px solid #111111;
+  box-shadow: 8px 8px 0px 0px #000000;
+  border-radius: 15px;
+  padding: 24px;
+  max-width: 384px;
+  background-color: #ffff;
+}
+.card__img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+@media (max-width: 375px) {
+  .card {
+    padding: 24px;
+    height: auto;
+    max-width: 327px;
+  }
+  .card__body {
+  }
+  .card__type__text {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+  .card__date {
+    line-height: 1.8rem;
+  }
+  .card__link {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .card__description {
+    line-height: 2.1rem;
+    font-size: 1.4rem;
+  }
+}
+.card__body {
+  margin-top: 24px;
+}
+.card__type__text {
+  border-radius: 4px;
+  display: inline-block;
+  padding: 4px 12px;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 21px;
+  color: black;
+  background-color: #f4d04e;
+}
+.card__date {
+  padding: 12px 0;
+  font-size: 1.1rem;
+  line-height: 2.1rem;
+  font-weight: 500;
+}
+.card__link {
+  cursor: pointer;
+  color: #111111;
+  font-weight: 800;
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+}
+.card__title {
+  color: #111111;
+}
+.card__title :hover {
+  color: #f4d04e;
+}
+.card__description {
+  transition: color 0.3s ease;
+  padding: 12px 0 24px 0;
+  color: #7f7f7f;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+.card__user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.card__user__name {
+  color: #111111;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  font-weight: 800;
+}
